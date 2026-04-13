@@ -2,7 +2,7 @@ title: JPCortesP's Blog
 description: Personal blog about Windows 365, Intune and other Windows technologies.
 url: https://jpcortesp.github.io
 baseurl: ""
-remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/dinky@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
