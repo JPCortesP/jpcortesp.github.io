@@ -1,0 +1,7 @@
+title: Joao's Blog
+description: Personal notes and technical thoughts
+url: https://jpcortesp.github.io
+baseurl: ""
+theme: minima
+plugins:
+  - jekyll-feed
