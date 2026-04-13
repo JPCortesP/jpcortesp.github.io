@@ -1,0 +1,5 @@
+{
+  "mdPasteEnhanced.path": "${projectRoot}/assets/images",
+  "mdPasteEnhanced.basePath": "${projectRoot}",
+  "mdPasteEnhanced.renderPattern": "![](/${imagePath})"
+}
