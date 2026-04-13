@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <p>
+      Este blog esta hospedado en GitHub. Alguna correccion?
+      {% if site.github and site.github.repository_url %}
+        <a href="{{ site.github.repository_url }}/issues/new/choose">Crea un nuevo comentario en GitHub</a>
+      {% else %}
+        <a href="{{ '/contribuir/' | relative_url }}">Consulta como contribuir o corregir algo</a>
+      {% endif %}
+      .
+      <a href="{{ '/contribuir/' | relative_url }}">Guia de contribucion</a>.
+    </p>
+  </div>
+</footer>
