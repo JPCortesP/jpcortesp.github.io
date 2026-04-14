@@ -5,7 +5,6 @@ date: 2026-04-13 12:00:00 +0000
 tags: [blog, cambios]
 ---
 
-# Cambios en la Interfaz de Intune para Windows 365
 
 Hoy lunes, despertamos con cambios en la interfaz de Windows 365 dentro de Intune. Recuerdan el menu horizontal? Ahora cambió a esto: 
 
