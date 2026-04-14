@@ -38,12 +38,12 @@ Si generalmente solo tenemos un único perfil para todos los usuarios, entonces 
 
 El flujo cada vez que agregamos un usuario al grupo de usuarios sería:
 
-    1. W365 reconoce el nuevo usuario con licencia, y aplica la configuración del Provisioning Policy y empieza a crear la CPC. 
-    2. Durante la creacion, utiliza imagen, ubicación, red etc, del provisioning Policy asignado. Basado en la licencia asignada al usuario, se selecciona el tamaño de la máquina. 
-    4. W365 reconoce que la CPC tiene asignada un Preparation Policy, y aplica su configuración (instalación de apps y ejecución de scripts). La etiqueta cambia de "provisioning" a "preparing". 
-    5. Device Preparation agrega la CPC al grupo de seguridad "Devices - W365Contabilidad"
-    6. Luego de que la CPC está creada, aplica la configuración de las Apps requeridas por dispositivo al unirse a Intune. 
-    7. Luego/Durante el primer inicio de sesión, se aplican las políticas (apps incluidas) de usuario al CPC. 
+1. W365 reconoce el nuevo usuario con licencia, y aplica la configuración del Provisioning Policy y empieza a crear la CPC.
+2. Durante la creacion, utiliza imagen, ubicación, red etc, del provisioning Policy asignado. Basado en la licencia asignada al usuario, se selecciona el tamaño de la máquina. 
+4. W365 reconoce que la CPC tiene asignada un Preparation Policy, y aplica su configuración (instalación de apps y ejecución de scripts). La etiqueta cambia de "provisioning" a "preparing".
+5. Device Preparation agrega la CPC al grupo de seguridad "Devices - W365Contabilidad"
+6. Luego de que la CPC está creada, aplica la configuración de las Apps requeridas por dispositivo al unirse a Intune.
+7. Luego/Durante el primer inicio de sesión, se aplican las políticas (apps incluidas) de usuario al CPC.
 
 Entonces, si hablamos de Apps y políticas, los debería de aplicar:
 
