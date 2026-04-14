@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <p><em>{{ page.date | date: "%d/%m/%Y" }}</em></p>
+
+  {{ content }}
+
+  {% if page.tags and page.tags.size > 0 %}
+  <p class="post-tags">
+    <strong>Etiquetas:</strong>
+    {% for tag in page.tags %}
+      <span>{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  {% if page.previous or page.next %}
+  <nav class="post-nav" aria-label="Navegacion entre publicaciones">
+    <p>
+      {% if page.previous %}
+        <a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.previous and page.next %}
+        &nbsp;|&nbsp;
+      {% endif %}
+      {% if page.next %}
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+      {% endif %}
+    </p>
+  </nav>
+  {% endif %}
+</article>
